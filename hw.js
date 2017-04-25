@@ -97,8 +97,6 @@ console.log("-- No.3 IMPERATIVE -------------")
 console.log(replaceZeros([5, 6, 'hello', 6, 'f']));
 
 
-
-
 function replace(array){
     return 0;
 }
@@ -123,7 +121,7 @@ function abbreviate(string){
             abbrev.push(chars[0].toUpperCase());
     }
 
-    return abbrev;
+    return abbrev.join('');
 
 }
 console.log("-- No.4 IMPERATIVE -------------")
@@ -141,7 +139,7 @@ function acronym (word){
 }
 
 console.log("-- No.4 FUNCTIONAL -------------")
-console.log(splitString(test).map(acronym));
+console.log(splitString(test).map(acronym).join(''));
 
 
 /**
